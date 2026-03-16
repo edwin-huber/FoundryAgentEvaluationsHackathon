@@ -1,0 +1,19 @@
+{
+  "eval_id": "eval_fdd3b63f697140baaaf6b97a198b7efb",
+  "run_id": "evalrun_1aaffcebfb3843d994a09495be0cae20",
+  "run_status": "completed",
+  "report_url": "https://ai.azure.com/nextgen/r/TGmxZqOYSnWvA5cuV_bUiQ,SwedenAIML,,edwinfoundry0226,proj-default/build/evaluations/eval_fdd3b63f697140baaaf6b97a198b7efb/run/evalrun_1aaffcebfb3843d994a09495be0cae20",
+  "result_counts": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "errored": 0
+  },
+  "criteria": {
+    "coherence": {
+      "passed": 3,
+      "failed": 0,
+      "pass_rate": 1.0
+    }
+  }
+}

@@ -1,0 +1,27 @@
+stages:
+  - evaluate
+
+variables:
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  PYTHONUNBUFFERED: "1"
+  MIN_COHERENCE: "0.85"
+  MIN_RELEVANCE: "0.85"
+
+evaluate_agent:
+  image: python:3.11
+  stage: evaluate
+  script:
+    - python -m venv .venv
+    - . .venv/bin/activate
+    - pip install --upgrade pip
+    - pip install -r solutions/requirements.txt
+    - python solutions/scripts/run_cloud_evaluation.py
+  only:
+    - main
+
+# Required protected CI/CD variables for Entra service principal auth:
+# - PROJECT_ENDPOINT
+# - MODEL_DEPLOYMENT_NAME
+# - AZURE_TENANT_ID
+# - AZURE_CLIENT_ID
+# - AZURE_CLIENT_SECRET
