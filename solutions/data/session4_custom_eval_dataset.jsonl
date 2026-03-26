@@ -1,0 +1,3 @@
+{"query": "What is Azure AI Foundry?", "response": "Azure AI Foundry is a platform for building, evaluating, and operating AI applications and agents."}
+{"query": "How do I run an agent evaluation in CI?", "response": "Use the Foundry SDK in a CI pipeline job to run cloud evaluations with configured evaluators and thresholds."}
+{"query": "Name one safety metric used for agent evaluations.", "response": "Violence is one safety metric often used in agent evaluations."}
